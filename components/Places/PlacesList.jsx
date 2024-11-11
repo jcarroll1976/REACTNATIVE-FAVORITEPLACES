@@ -4,8 +4,8 @@ import PlaceItem from "./PlaceItem";
 export default function PlacesList({places}) {
     if(!places || places.length === 0) {
         return (
-            <View>
-                <Text>No places added yet! - start adding some!</Text>
+            <View style={styles.fallbackContainer}>
+                <Text style={styles.fallbackText}>No places added yet! - start adding some!</Text>
             </View>
         )
     }
